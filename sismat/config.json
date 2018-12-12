@@ -1,0 +1,15 @@
+{
+	"interests": [
+		{
+			"code": "NJAZ090",
+			"ids": [7, 10, 13]
+		},
+		{
+			"code": "NMAG202",
+			"ids": [1, 2]
+		}
+	],
+	"login": "tajne",
+	"heslo": "tajne", 
+	"period": 900
+}

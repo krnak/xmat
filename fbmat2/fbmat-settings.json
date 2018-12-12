@@ -1,0 +1,16 @@
+{
+	"login": "epfs@seznam.cz",
+	"pass" : "tajne",
+	"links": [
+		["acro", ["tomas@krnak.cz"], "https://m.facebook.com/groups/961169174013025/"],
+		["drdo", ["tomas@krnak.cz"], "https://m.facebook.com/groups/1654596291463830/"],
+		["mmit", ["tomas@krnak.cz"], "https://m.facebook.com/groups/492313027800028/"],
+		["frbl", ["tomas@krnak.cz"], "https://m.facebook.com/pg/frantisekblazen/posts/"],
+		["step", ["tomas@krnak.cz", "misa.106@seznam.cz"], "https://m.facebook.com/groups/194589557310982/"],
+		["sasa", ["tomas@krnak.cz"], "https://m.facebook.com/sasamankvintet/"],
+		["lin3", ["tomas@krnak.cz"], "https://m.facebook.com/groups/1052257638128365/"],
+		["lin2", ["tomas@krnak.cz"], "https://m.facebook.com/groups/200850247003942/"],
+		["line", ["tomas@krnak.cz"], "https://m.facebook.com/groups/slacklinecz"],
+		["bcan", ["tomas@krnak.cz", "bocek.ondrej@mendlak.cz"], "https://m.facebook.com/groups/1942075575810809/"]
+	]
+}
