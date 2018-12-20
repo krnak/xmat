@@ -30,7 +30,7 @@ class Deskomat(Xmat):
 		try:
 			deska = requests.get(url, timeout=10)
 		except Exception as e:
-			self.send("tomas@krnak.cz")
+			self.send("tomas@krnak.cz", "[deskomat]: se porouchal", str(e))
 			return 
 			
 		tree = html.fromstring(deska.content)

@@ -4,6 +4,10 @@ import smtplib
 from email.mime.text import MIMEText
 import json
 
+agipybot_passw = ''
+if not agipybot_passw:
+	agipybot_passw = input('Zadej heslo pro agipybot@gmail.com: ')
+
 class Xmat():
 	def __init__(self, name, waiting_time=900, hello_period=7*24*60*60,
 			hello_email=None):
@@ -108,7 +112,7 @@ class Xmat():
 			server = smtplib.SMTP('smtp.gmail.com', 587)
 			server.starttls()
 			server.ehlo()
-			server.login('agipybot@gmail.com', 'agipybot6')
+			server.login('agipybot@gmail.com', agipybot_passw)
 
 			server.sendmail('agipybot@gmail.com', address, msg.as_string())
 		except:
