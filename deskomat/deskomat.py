@@ -5,7 +5,6 @@ import paho.mqtt.client as mqtt
 
 from xmat import Xmat
 
-target_email = 'michal@krnak.cz'
 source_xpath = "//table[@class='content edeska-vypis-vyveseni']/tbody/tr/td[@class='content edeska-sloupec-nazev']/a"
 url = 'http://cztedeskaext.praha4.cz/eDeska/eDeskaAktualni.jsp'
 
@@ -45,7 +44,7 @@ class Deskomat(Xmat):
 				if word in text.lower():
 					subject = '[deskomat]: {} nalezeno'.format(word)
 					text += '\n' + link
-					yield (target_email, subject, text)
+					yield (self.setting["email"], subject, text)
 
 if __name__ == '__main__':
 	Deskomat().loop()
