@@ -117,3 +117,9 @@ class Xmat():
 			server.sendmail('agipybot@gmail.com', address, msg.as_string())
 		except:
 			self.log('Failed to send an email. subject: {}'.format(subject))
+
+	def send_error(e, address):
+		self.send(address,
+			"[{}]: se porouchal".format(self.name),
+			str(e)
+			)
