@@ -3,6 +3,7 @@ from lxml import html
 import re
 #import paho.mqtt.client as mqtt
 
+import sys
 sys.path.append("..")
 from xmat import Xmat
 import db
@@ -25,7 +26,6 @@ class Deskomat(Xmat):
 		#self.mqtt_client.publish("michle/deskomat/running", qos=0, retain=False)
 		for item in self.items_of_interest():
 			self.send(*item)
-		self.dump_db()
 
 	#def init(self):
 	#	self.mqtt_client.connect("mqtt.KRNAK", 1883, 1000)
