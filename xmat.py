@@ -3,50 +3,23 @@ from datetime import datetime
 import smtplib
 from email.mime.text import MIMEText
 import json
+import db
 
-agipybot_passw = ''
-if not agipybot_passw:
-	agipybot_passw = input('Zadej heslo pro agipybot@gmail.com: ')
+agipybot_pasw = db.load_or_write("sensitive", "agipybot_pasw")
 
 class Xmat():
 	def __init__(self, name, waiting_time=900, hello_period=7*24*60*60,
 			hello_email=None):
 		self.name = name
-		self.db_name = '{}-db.json'.format(self.name)
 		self.looping = False
 		self.waiting_time = waiting_time
 		self.hello_period = hello_period
 		self.last_hello = 0
-		self.hello_email = hello_email
+		self.hello_email = None
 
 	def items_of_interest(self):
 		'''Generátor novinek k odeslání.'''
 		yield from ()
-
-	def load_settings(self):
-		try:
-			with open('{}-settings.json'.format(self.name), 'r') as file:
-				self.settings = json.load(file)
-		except FileNotFoundError:
-			self.settings = dict()
-
-	def load_db(self):
-		'''Načte dadabázi ze souboru.'''
-		try:
-			with open(self.db_name, 'r') as file:
-				self.database = set(json.load(file))
-		except FileNotFoundError:
-			self.database = set()
-
-	def dump_db(self, obj=None):
-		'''Uloží databázi do souboru.
-		Možno přidat objekt.'''
-		if not obj == None:
-			self.database.add(obj)
-
-		with open(self.db_name, "w") as file:
-			json.dump(list(self.database), file,
-				indent=4, separators=(',', ': '))
 
 	def init(self):
 		pass
@@ -56,12 +29,11 @@ class Xmat():
 
 	def loop(self):
 		'''Hlavní smyčka.'''
+		self.log('load settings')
+		self.settings = db.table(self.name + "-settings")
+
 		self.log('start loop')
 		self.looping = True
-		self.log('load database')
-		self.load_db()
-		self.log('load settings')
-		self.load_settings()
 		self.init()
 
 		while self.looping:
@@ -102,7 +74,6 @@ class Xmat():
 
 	def send(self, address, subject, text):
 		'''Pošle email.'''
-		#773281310@SMS.t-mobile.cz is my mobile
 		try:
 			self.log('sending: "{}" to {}'.format(subject, address))
 			msg = MIMEText(text)
@@ -112,13 +83,13 @@ class Xmat():
 			server = smtplib.SMTP('smtp.gmail.com', 587)
 			server.starttls()
 			server.ehlo()
-			server.login('agipybot@gmail.com', agipybot_passw)
+			server.login('agipybot@gmail.com', agipybot_pasw)
 
 			server.sendmail('agipybot@gmail.com', address, msg.as_string())
 		except:
 			self.log('Failed to send an email. subject: {}'.format(subject))
 
-	def send_error(e, address):
+	def send_error(self, e, address):
 		self.send(address,
 			"[{}]: se porouchal".format(self.name),
 			str(e)
