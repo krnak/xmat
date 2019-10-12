@@ -37,6 +37,7 @@ class Deskomat(Xmat):
 		#except requests.exceptions.Timeout:
 		except Exception as e:
 			self.send_error(e, db.table("sensitive")["email"])
+			return
 			
 		tree = html.fromstring(deska.content)
 		for anchor in tree.xpath(source_xpath):
