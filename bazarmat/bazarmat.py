@@ -54,4 +54,3 @@ class Bazarmat(Xmat):
 			if "x1 carbon" in name.lower():
 				yield (self.target_email, "[{}]: lenovo found".format(self.name),
 					   cena + "\n" + text + "\n" + url)
-
