@@ -1,69 +1,94 @@
-from selenium import webdriver
+import selenium
+import selenium.webdriver #some __init__.py fail in selenium
 from selenium.common.exceptions import NoSuchElementException, InvalidElementStateException
 import time
 import http
+import json
+import urllib
+import sys
 
+sys.path.append("..")
 from xmat import Xmat
-
+import db
 #xpath = "//div[@role='feed']/div[@role='article']"
-xpath = "//div[@id='contentArea']//div[@data-fte='1']"
+article_xpath = "//div[@id='m_group_stories_container']//div[@role='article']"
+article_xpath2 = "//div[@id='m_story_permalink_view']//div[@data-ft]/div[@class]"
+drdo_url = "https://m.facebook.com/groups/1654596291463830/"
+fb_login = db.load_or_write("sensitive","fb_login")
+fb_pasw = db.load_or_write("sensitive", "fb_pasw")
+article_url = "https://m.facebook.com/groups/1654596291463830?view=permalink&id="
+
 
 class FBmat(Xmat):
 	def __init__(self):
-		super().__init__('fbmat', hello_period=4*24*60*60,
-			hello_email="tomas@krnak.cz")
-		self.driver = webdriver.PhantomJS()
+		super().__init__('fbmat', hello_period=4*24*60*60)
+		options = selenium.webdriver.firefox.options.Options()
+		options.headless = True
+		self.driver = selenium.webdriver.Firefox(options=options)
+		self.db = db.table("fbmat")
 
 	def items_of_interest(self):
-		for link_id, target_emails, link in self.settings['links']:
-			#if link_id != 'mmit':
-			#	continue
-			self.log('check ' + link_id)
-			self.driver.get(link)
-			self.log("len " + str(len(self.driver.find_elements_by_xpath(xpath))))
-			for article in self.driver.find_elements_by_xpath(xpath):
-				iid = article.get_attribute('id')
-				self.log('check iid' + str(iid))
-				if iid in self.database:
+		for group, link in self.db["links"].items():
+			#if group != "bcan":
+				#continue
+			self.log("checking " + group)
+
+			subscribers = link["subscribers"][:]
+			self.driver.get(link["url"])
+
+			articles = self.driver.find_elements_by_xpath(article_xpath)
+			self.log(str(len(articles)) + " articles found")
+			iids = []
+			for article in articles:
+				if "Navrhované skupiny" in article.text:
 					continue
-				self.database.add(iid)
+				iid = str(json.loads(article.get_attribute('data-ft'))["mf_story_key"])
+				iids.append(iid)
+
+				#self.log('check iid ' + str(iid))
+			for iid in iids:
+				for email in subscribers[:]:
+					triple = [group, email, iid]
+					if triple in self.db["sent"]:
+						subscribers.remove(email)
+					else:
+						self.db["sent"].append(triple)
+						self.db.commit()
+				if not subscribers:
+					continue
+
+				self.driver.get(article_url + iid)
+				article = self.driver.find_element_by_xpath(article_xpath2)
+				author = article.find_element_by_xpath(".//h3//a").text
+				text = article.find_element_by_xpath(".//div[@class and @style and @data-ft]").text
 				try:
-					article.find_element_by_xpath('//a[class="see_more_link"]').click()
-					time.sleep(1)
-					#new line
-					self.log('klikám')
+					anchor_elem = article.find_element_by_xpath(".//div[@data-ft='{\"tn\":\"H\"}']/a")
+					fb_url = anchor_elem.get_attribute("href")
+					link = urllib.parse.parse_qs(
+						   urllib.parse.urlparse(fb_url).query)['u'][0]
 				except NoSuchElementException:
-					#new line
-					self.log('neklikám')
-					pass
-				author, stamp = article.text.split('\n')[:2]
-				author = ' '.join(author.split(' ')[:2])
-				lines = []
-				for line in article.text.split('\n')[2:]:
-					if line in ('To se mi líbí', 'Zobrazit překlad'):
-						break
-					lines.append(line)
-				text = '\n'.join(lines)
-				if not text or text == '\n':
-					continue
-				for target_email in target_emails:
-					yield (target_email,
-						   '[fb]: {} píše do {} id:{}'.format(
-						   	author, link_id, iid[-8:-4]),
-						   '\n'.join([author, stamp, text, link]))
+					link = ""
+
+				date = article.find_element_by_xpath("//abbr").text
+
+				#print("--------", iid)
+				#print("author:", author)
+				#print("text:", text)
+				#print("link:", link)
+				#print("date:", date)
+
+				for email in subscribers:
+					subject = "[{}]: {} id {}".format(self.name, group,iid)
+					message = "\n".join([author,date,text,link])
+					yield (email, subject, text)
 
 	def login(self):
 		self.log('logging in')
-		self.driver = webdriver.PhantomJS()
-		self.driver.get("https://www.facebook.com/")
-		#driver.set_window_size(1024, 768)
-		#driver.save_screenshot('now.png')
-		self.driver.find_element_by_name('email').send_keys(self.settings['login'])
-		self.driver.find_element_by_name('pass').send_keys(self.settings['pass'])
+		self.driver.get("https://m.facebook.com")
+		self.driver.find_element_by_id('m_login_email').send_keys(fb_login)
+		self.driver.find_element_by_name('pass').send_keys(fb_pasw)
 		self.driver.find_element_by_name('login').click()
-		time.sleep(3)
-		#self.iid = self.driver.execute_script('return dl_id')
-		self.log('logged in')
+		time.sleep(1)
 
 	def update(self):
 		if not self.logged_in():
@@ -75,29 +100,27 @@ class FBmat(Xmat):
 			except Exception as e:
 				self.log('login failed\n\n' + str(e))
 				return
-		#self.show()
-		"""while not self.logged_in():
+
+		while not self.logged_in():
 			self.log('repeat')
 			time.sleep(5)
-			self.login()"""
-		try:
-			for article in self.items_of_interest():
-				self.send(*article)
-		except Exception as e:
-			self.log('fail\n' + str(e))
+			self.login()
 
-		self.dump_db()
+		#try:
+		self.send_many(self.items_of_interest())
+		#except Exception as e:
+		#	self.log('fail\n' + str(e))
 
 	def logged_in(self):
 		'''A very very stupid test. Hmm. '''
 		try:
-			self.driver.get("https://www.facebook.com/")
+			self.driver.get("https://m.facebook.com/")
 			self.driver.find_element_by_name('pass')
 			return False
 		except NoSuchElementException:
 			return True
 		except Exception as e:
-			self.log('login failed\n\n' + str(e))
+			self.log('login failed\n' + str(e))
 			return False
 
 	def outit(self):
@@ -109,11 +132,5 @@ class FBmat(Xmat):
 	def show(self):
 		self.driver.save_screenshot("now.png")
 
-
-
 if __name__ == '__main__':
 	FBmat().loop()
-else:
-	fb = FBmat()
-	fb.load_db()
-	fb.load_settings()
