@@ -91,6 +91,32 @@ class Xmat():
 			self.log(20*"-")
 			self.log(str(e))
 			self.log(20*"-")
+
+	def send_many(self, triples):
+		'''Pošle emaily.'''
+		try:
+			server = smtplib.SMTP('smtp.gmail.com', 587)
+			server.starttls()
+			server.ehlo()
+			server.login('agipybot@gmail.com', agipybot_pasw)
+		except Exception as e:
+			self.log('GMAIL login falied')
+			self.log(20*"-")
+			self.log(str(e))
+			self.log(20*"-")
+
+		for address, subject, text in triples:
+			self.log('sending: "{}" to {}'.format(subject, address))
+			msg = MIMEText(text)
+			msg['Subject'] = subject
+			msg['From'] = 'agipybot@gmail.com'
+			try:
+				server.sendmail('agipybot@gmail.com', address, msg.as_string())
+			except Exception as e:
+				self.log('Failed to send an email. subject: {}'.format(subject))
+				self.log(20*"-")
+				self.log(str(e))
+				self.log(20*"-")
 				
 	def send_error(self, e, address):
 		self.send(address,

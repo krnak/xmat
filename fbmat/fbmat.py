@@ -1,6 +1,7 @@
 import selenium
 import selenium.webdriver #some __init__.py fail in selenium
 from selenium.common.exceptions import NoSuchElementException, InvalidElementStateException
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import time
 import http
 import json
@@ -24,7 +25,11 @@ class FBmat(Xmat):
 		super().__init__('fbmat', hello_period=4*24*60*60)
 		options = selenium.webdriver.firefox.options.Options()
 		options.headless = True
-		self.driver = selenium.webdriver.Firefox(options=options)
+		cap = DesiredCapabilities().FIREFOX
+		cap["marionette"] = False
+		self.driver = selenium.webdriver.Firefox(
+			options=options,
+			capabilities=cap)
 		self.db = db.table("fbmat")
 
 	def items_of_interest(self):
