@@ -430,3 +430,246 @@ console.error: BroadcastService:
 [Child 23393, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-fvtOIe/firefox-64.0+linuxmint2+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
 [Child 23366, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-fvtOIe/firefox-64.0+linuxmint2+tessa/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 363
+*** You are running in headless mode.
+1580660643906	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1580660644009	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1580660644010	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1580660644010	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1580660644010	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1580660645595	Marionette	INFO	Listening on port 32923
+1580660645686	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1580660674218	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1580660674351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1580660674351	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1580660674352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1580660674352	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1580660676105	Marionette	INFO	Listening on port 44317
+1580660676130	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1580660685185	Marionette	INFO	Stopped listening on port 44317
+1580660719614	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1580660719746	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1580660719746	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1580660719746	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1580660719746	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1580660721393	Marionette	INFO	Listening on port 37925
+1580660721462	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1580661466446	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1580661466576	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1580661466576	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1580661466576	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1580661466576	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1580661468334	Marionette	INFO	Listening on port 33671
+1580661468357	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1580661510310	Marionette	INFO	Stopped listening on port 33671
+1592126864528	Marionette	INFO	Listening on port 44799
+1592126864587	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yJ/r/Xzoi3bwhRtX.js?_nc_x=VePt5qzn5HE, line 42: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yJ/r/Xzoi3bwhRtX.js?_nc_x=VePt5qzn5HE, line 42: unreachable code after return statement
+JavaScript warning: https://www.facebook.com/rsrc.php/v3/yJ/r/Xzoi3bwhRtX.js?_nc_x=VePt5qzn5HE, line 42: unreachable code after return statement
+1592126986609	Marionette	INFO	Listening on port 37005
+1592126986718	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/Xzoi3bwhRtX.js?_nc_x=VePt5qzn5HE, line 42: unreachable code after return statement
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/Xzoi3bwhRtX.js?_nc_x=VePt5qzn5HE, line 42: unreachable code after return statement
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/yJ/r/Xzoi3bwhRtX.js?_nc_x=VePt5qzn5HE, line 42: unreachable code after return statement
+JavaScript error: resource://gre/actors/BrowserElementParent.jsm, line 314: TypeError: state is undefined
+JavaScript error: resource://gre/actors/BrowserElementParent.jsm, line 314: TypeError: state is undefined
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 568: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+1592127004366	Marionette	INFO	Stopped listening on port 37005
+1592127023556	Marionette	INFO	Listening on port 35117
+1592127023611	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592127071002	Marionette	INFO	Stopped listening on port 35117
+1592127660026	Marionette	INFO	Listening on port 43791
+1592127660059	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1592128531375	Marionette	INFO	Listening on port 43895
+1592128531434	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592128536065	Marionette	INFO	Stopped listening on port 43895
+1592128572798	Marionette	INFO	Listening on port 36509
+1592128572867	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592128596981	Marionette	INFO	Stopped listening on port 36509
+1592128664679	Marionette	INFO	Listening on port 33615
+1592128664741	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592128741459	Marionette	INFO	Listening on port 42069
+1592128741523	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592128743020	Marionette	INFO	Stopped listening on port 33615
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+1592128888711	Marionette	INFO	Stopped listening on port 42069
+1592128902333	Marionette	INFO	Listening on port 36777
+1592128902431	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1592128961167	Marionette	INFO	Listening on port 37417
+1592128961186	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592129325964	Marionette	INFO	Stopped listening on port 37417
+1592129330350	Marionette	INFO	Listening on port 33383
+1592129330440	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592129409864	Marionette	INFO	Listening on port 46461
+1592129409965	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592131285305	Marionette	INFO	Listening on port 44427
+1592131285355	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592131395289	Marionette	INFO	Listening on port 34145
+1592131395322	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592131415741	Marionette	INFO	Stopped listening on port 34145
+1592131467747	Marionette	INFO	Listening on port 33617
+1592131467809	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592131500988	Marionette	INFO	Listening on port 38909
+1592131501013	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592131505885	Marionette	INFO	Stopped listening on port 33617
+1592131506732	Marionette	INFO	Stopped listening on port 44427
+1592131541261	Marionette	INFO	Listening on port 36439
+1592131541280	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592131542331	Marionette	INFO	Stopped listening on port 38909
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592132349383	Marionette	INFO	Listening on port 36705
+1592132349452	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592132374716	Marionette	INFO	Listening on port 44765
+1592132374798	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592132379733	Marionette	INFO	Stopped listening on port 36705
+1592132388399	Marionette	INFO	Stopped listening on port 44765
+1592132425384	Marionette	INFO	Listening on port 46555
+1592132425487	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:944:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/styles.js:587:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: (new Error("Protocol error (noSuchActor): No such actor for ID: server0.conn0.child2/domnode153 from: server0.conn0.child2/domnode153", "resource://devtools/shared/protocol/Front.js", 319))
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1592133384362	Marionette	INFO	Listening on port 43577
+1592133384429	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592133411745	Marionette	INFO	Listening on port 36957
+1592133411786	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592133417892	Marionette	INFO	Stopped listening on port 43577
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1592133458507	Marionette	INFO	Listening on port 35415
+1592133458525	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592133469717	Marionette	INFO	Listening on port 43965
+1592133469801	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592133580716	Marionette	INFO	Listening on port 40995
+1592133580758	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592133993836	Marionette	INFO	Listening on port 34571
+1592133993856	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592134017094	Marionette	INFO	Listening on port 40887
+1592134017140	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592134020349	Marionette	INFO	Stopped listening on port 34571
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:944:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/styles.js:587:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: (new Error("Protocol error (noSuchActor): No such actor for ID: server0.conn0.child2/domnode180 from: server0.conn0.child2/domnode180", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/styles.js:587:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: "Error while calling actor 'pagestyle's method 'getUsedFontFaces'" "node is null"
+console.error: "getUsedFontFaces@resource://devtools/server/actors/styles.js:384:24\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "Could not get the list of font families" (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/styles.js:587:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "Error while calling actor 'pagestyle's method 'getUsedFontFaces'" "node is null"
+console.error: "getUsedFontFaces@resource://devtools/server/actors/styles.js:384:24\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: "Could not get the list of font families" (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:944:5\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: "Error while calling actor 'pagestyle's method 'getUsedFontFaces'" "node is null"
+console.error: "getUsedFontFaces@resource://devtools/server/actors/styles.js:384:24\nhandler@resource://devtools/shared/protocol/Actor.js:154:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+console.error: "Could not get the list of font families" (new Error("Protocol error (unknownError): node is null from: server0.conn0.child2/pagestyle25", "resource://devtools/shared/protocol/Front.js", 319))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592136022337	Marionette	INFO	Listening on port 44959
+1592136022379	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592141010600	Marionette	INFO	Listening on port 37039
+1592141010683	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592141035486	Marionette	INFO	Stopped listening on port 37039
+1592141126185	Marionette	INFO	Listening on port 35425
+1592141126270	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1592141308402	Marionette	INFO	Listening on port 33423
+1592141308436	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592141352070	Marionette	INFO	Stopped listening on port 33423
+1592141792190	Marionette	INFO	Listening on port 44627
+1592141792222	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592141854566	Marionette	INFO	Listening on port 40827
+1592141854623	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592141859607	Marionette	INFO	Stopped listening on port 44627
+1592141953164	Marionette	INFO	Listening on port 37295
+1592141953229	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592141956517	Marionette	INFO	Stopped listening on port 40827
+1592142022212	Marionette	INFO	Listening on port 37311
+1592142022295	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592142024020	Marionette	INFO	Stopped listening on port 37295
+1592142275327	Marionette	INFO	Listening on port 44035
+1592142275401	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592142381987	Marionette	INFO	Listening on port 45585
+1592142382028	Marionette	WARN	TLS certificate errors will be ignored for this session
+1592142482070	Marionette	INFO	Stopped listening on port 44035
+1592162187854	Marionette	INFO	Stopped listening on port 45585
+1592162190429	Marionette	INFO	Stopped listening on port 37311
+1592162196899	Marionette	INFO	Listening on port 44611
+1592162196984	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/ThumbnailsChild.jsm, line 29: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+JavaScript error: resource://gre/actors/ThumbnailsChild.jsm, line 29: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable

@@ -1,6 +1,7 @@
 import json
 from os.path import expanduser
-db_path = expanduser("~") + "/xmat_db"
+#db_path = expanduser("~") + "/xmat_db"
+db_path = expanduser("~") + "/code/xmat_db"
 
 class SyncFile(dict):
 	def __init__(self, path):

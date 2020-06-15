@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+	<title>Imported Filters</title>
+	<author>
+		<name>Tomas Krnak</name>
+		<email>tomas@krnak.cz</email>
+	</author>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lab1priority'/>
+		<apps:property name='label' value='1priority'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lab2priority'/>
+		<apps:property name='label' value='2priority'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lab3priority'/>
+		<apps:property name='label' value='3priority'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lab4priority'/>
+		<apps:property name='label' value='4priority'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lab5priority'/>
+		<apps:property name='label' value='5priority'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labdrdo'/>
+		<apps:property name='label' value='fb/drdo'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labnalehko'/>
+		<apps:property name='label' value='fb/nalehko'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labnaostro'/>
+		<apps:property name='label' value='fb/naostro'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lablajny'/>
+		<apps:property name='label' value='fb/lajny'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lablajny2'/>
+		<apps:property name='label' value='fb/lajny2'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labbronto'/>
+		<apps:property name='label' value='fb/bronto'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labmmit'/>
+		<apps:property name='label' value='fb/mmit'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labBr23'/>
+		<apps:property name='label' value='fb/Br23'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labskrypta'/>
+		<apps:property name='label' value='fb/skrypta'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labmff'/>
+		<apps:property name='label' value='fb/mff'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labgekom'/>
+		<apps:property name='label' value='fb/gekom'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labPELHŘIMOVY'/>
+		<apps:property name='label' value='fb/PELHŘIMOVY'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labrainbow'/>
+		<apps:property name='label' value='fb/rainbow'/>
+		<apps:property name='shouldMarkAsRead' value='true'/>
+		<apps:property name='shouldArchive' value='true'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labyndex'/>
+		<apps:property name='label' value='fb/yndex'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labprechod'/>
+		<apps:property name='label' value='fb/prechod'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labmffakro'/>
+		<apps:property name='label' value='fb/mffakro'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='lablajny3'/>
+		<apps:property name='label' value='fb/lajny3'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labbcan'/>
+		<apps:property name='label' value='fb/bcan'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Imported Filter</title>
+		<content></content>
+		<apps:property name='from' value='agipybot@gmail.com'/>
+		<apps:property name='hasTheWord' value='labakropankrac'/>
+		<apps:property name='label' value='fb/akropankrac'/>
+		<apps:property name='shouldMarkAsRead' value='false'/>
+		<apps:property name='shouldArchive' value='false'/>
+		<apps:property name='sizeOperator' value='s_sl'/>
+		<apps:property name='sizeUnit' value='s_smb'/>
+	</entry>
+
+</feed>
