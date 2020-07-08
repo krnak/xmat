@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import json
 from os.path import expanduser
 #db_path = expanduser("~") + "/xmat_db"
