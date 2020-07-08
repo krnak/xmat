@@ -9,6 +9,7 @@ import db
 
 address = db.load_or_write("sensitive", "email")
 url = 'https://www.espolubydleni.cz/podnajem-spolubydlici/praha'
+nabizim = b'Nab\xc3\xadz\xc3\xadm'.decode("utf-8")
 
 class Espolubydlenimat(Xmat):
 	def __init__(self):
@@ -41,7 +42,7 @@ class Espolubydlenimat(Xmat):
 
 				typ = head_td[3].xpath("./strong")[0].text
 
-				if not "Nabízím" in typ:
+				if not nabizim in typ:
 					continue
 
 
