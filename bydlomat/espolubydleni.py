@@ -27,12 +27,17 @@ class Espolubydlenimat(Xmat):
 
 		for i in range(1,4): # only first pages
 
-			r = requests.post(url + "/" + str(i))
+			try:
+				r = requests.post(url + "/" + str(i))
+			except requests.exceptions.ConnectionError as e:
+				self.send_error(e, address)
+				continue
 
 			try:
 				html_etree = html.fromstring(r.content)
 			except Error as e:
 				self.send_error(e, address)
+				continue
 
 			bids = couples(html_etree.xpath('//div[@id="result1"]/table/tr')[1:])
 
