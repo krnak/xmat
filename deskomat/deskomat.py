@@ -8,7 +8,7 @@ sys.path.append("..")
 from xmat import Xmat
 import db
 
-target_email = db.load_or_write("sensitive", "email")
+target_email = db.load_or_write("sensitive", "tata_email")
 source_xpath = "//table[@class='content edeska-vypis-vyveseni']/tbody/tr/td[@class='content edeska-sloupec-nazev']/a"
 rows_xpath = "//table[@class='content edeska-vypis-vyveseni']/tbody/tr"
 
