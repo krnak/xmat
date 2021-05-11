@@ -2,9 +2,9 @@ from bazarmat import Bazarmat
 
 
 class Sbazarmat(Bazarmat):
-	def __init__(self):
+	def __init__(self, url):
 		super().__init__('sbazar')
-		self.bazar_url="https://www.sbazar.cz/hledej/lenovo%20x1%20carbon"
+		self.bazar_url=url
 		self.inzerat_xpath=".//li[@data-e2e=\"item\"]"
 		self.inzerat_url=".//a[@class=\"c-item__link\"]"
 		self.inzerat_img=".//img[@class=\"c-item__image\"]/img"
@@ -17,4 +17,4 @@ class Sbazarmat(Bazarmat):
 
 
 if __name__ == '__main__':
-	Sbazarmat().loop()
+	Sbazarmat(input("enter url:")).loop()

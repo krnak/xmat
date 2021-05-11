@@ -51,6 +51,5 @@ class Bazarmat(Xmat):
 			self.db["ids"].append(iid)
 			self.db.commit()
 
-			if "x1 carbon" in name.lower():
-				yield (self.target_email, "[{}]: lenovo found".format(self.name),
+			yield (self.target_email, "[{}]: item found".format(self.name),
 					   cena + "\n" + text + "\n" + url)
